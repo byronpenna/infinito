@@ -7,6 +7,6 @@ class Noticias extends CI_Controller
 		parent::__construct();
 	}
 	public function agregar(){
-		$this->load->view("Noticias/")
+		$this->load->view("Noticias/agregar.php");
 	}
 }
