@@ -25,6 +25,14 @@
 					<p>I'm an instance of <a href="http://ckeditor.com">CKEditor</a>.</p>
 				</div>
 			</div>
+			<label>Idioma</label>
+			<select class="form-control">
+				<option value="1">Español</option>
+			</select>
+			<label>Descripción</label>
+			<input class="form-control">
+			<button>Agregar</button>
+			
 		</form>
 	</div>
 	<footer class='row marginNull'>
@@ -35,8 +43,10 @@
 			// scripts universales
 			$this->load->view("parts/scripts.php")
 		?>
+		<script type="text/javascript" src=<?php echo base_url("Content/plugins/jquery/ckeditor/ckeditor.js") ?> ></script>
+		<script type="text/javascript" src=<?php echo base_url("Content/plugins/jquery/ckeditor/ckeditor.js") ?> ></script>
 		<!-- editor -->
-		<script type="text/javascript" src=<?php echo base_url("Content/js/Welcome/functions.js") ?> ></script>
-		<script type="text/javascript" src=<?php echo base_url("Content/js/Welcome/script.js") ?> ></script>
+		<script type="text/javascript" src=<?php echo base_url("Content/js/Noticias/Agregar/functions.js") ?> ></script>
+		<script type="text/javascript" src=<?php echo base_url("Content/js/Noticias/Agregar/script.js") ?> ></script>
 </body>
 </html>
