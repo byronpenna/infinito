@@ -19,7 +19,7 @@ class Noticias extends PadreController
 		public function saveNoticia(){
 			$frm = $this->getFormularioAjax();
 			$retorno = new stdClass();
-			$retorno->estado = $this->model->saveNoticia($frm);
+			$retorno = $this->model->saveNoticia($frm);
 			echo json_encode($retorno);
 			//print_r($_POST);
 		}

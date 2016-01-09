@@ -8,13 +8,22 @@ class NoticiasModel extends CI_Model
 	}
 	// metodos
 		function saveNoticia($frm){
-			$sql 	= "INSERT INTO noticias 
+			$retorno = new stdClass();
+			$retorno->mensaje = "";
+			try{
+				$sql 	= "INSERT INTO noticias 
 						VALUES(null,now(),now(),'".$frm->txtTitulo."','".$frm->richText."',1,".$frm->cbIdioma.",'".$frm->txtDescripcion."','',0)";
-			$flag 	= $this->db->query($sql);
-			if($flag){
-				return true;
-			}else{
-				return false;
+				$flag 	= $this->db->query($sql);
+				if($flag){
+					$retorno->estado = true;
+				}else{
+					$retorno->estado = false;
+					$retorno->mensaje = "Error no controlado";
+				}
+			} catch (Exception $e) {
+				$retorno->estado = false;
+				$retorno->mensaje = $e;
 			}
+			return $retorno;
 		}
 }
