@@ -26,11 +26,11 @@
 				</div>
 			</div>
 			<label>Idioma</label>
-			<select class="form-control">
+			<select class="form-control" name="cbIdioma">
 				<option value="1">Español</option>
 			</select>
 			<label>Descripción</label>
-			<input class="form-control">
+			<input class="form-control" name="txtDescripcion">
 			<button>Agregar</button>
 			
 		</form>

@@ -1,3 +1,5 @@
+// Variables
+    var RAIZ = "http://localhost/infinito/";
 // serializacion 
     function serializeSection(section) {
         var frm = serializeToJson(section.find("input,select,textarea").serializeArray());

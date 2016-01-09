@@ -48,7 +48,11 @@ $(document).ready(function(){
 	initSample();
 	/**********/
 	//
-	$(document).on("submit",".frmNoticia",function(e){
-		
+	$(document).on("submit","#frmNoticia",function(e){
+		var frm = serializeSection($(this));
+		e.preventDefault();
+		//var editor = CKEDITOR.editor.replace('editor');
+		frm.richText =  CKEDITOR.instances['editor'].getData();
+		frmNoticia(frm);
 	})
 })
