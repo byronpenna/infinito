@@ -37,6 +37,9 @@ class Noticias extends PadreController
 				// view 
 					$this->load->view("Noticias/agregar.php",$data);
 			}
+			public function setMiniatura($id=-1){
+				$this->load->view("noticias/SetMiniatura.php");
+			}
 		// acciones 
 			public function editNoticia(){
 				$frm = $this->getFormularioAjax();
