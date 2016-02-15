@@ -45,7 +45,6 @@
 			$this->load->view("parts/scripts.php")
 		?>
 		<script type="text/javascript" src=<?php echo base_url("Content/plugins/jquery/ckeditor/ckeditor.js") ?> ></script>
-		<script type="text/javascript" src=<?php echo base_url("Content/plugins/jquery/ckeditor/ckeditor.js") ?> ></script>
 		<!-- editor -->
 		<script type="text/javascript" src=<?php echo base_url("Content/js/Noticias/Agregar/functions.js") ?> ></script>
 		<script type="text/javascript" src=<?php echo base_url("Content/js/Noticias/Agregar/script.js") ?> ></script>
